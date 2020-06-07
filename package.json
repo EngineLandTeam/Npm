@@ -1,12 +1,34 @@
 {
-  "name": "Npm",
+  "name": "t3am-npm",
   "version": "1.0.0",
-  "description": "Configuracion inicial de NPM",
+  "description": "First tests with NPM",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --open --mode development",
+    "format": "prettier --write '{*.js,src/**/*.{js,jsx}}'",
+    "view": "--open",
+    "lint": "eslint src/ --fix"
   },
-  "keywords": [],
+  "keywords": [
+    "npm",
+    "node",
+    "webpack"
+  ],
   "author": "T3am. <EngineLandTeam@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "bootstrap": "^4.5.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EngineLandTeam/Npm.git"
+  },
+  "bugs": {
+    "url": "https://github.com/EngineLandTeam/Npm/issues"
+  },
+  "homepage": "https://github.com/EngineLandTeam/Npm#readme"
 }

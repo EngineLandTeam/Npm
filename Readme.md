@@ -1,4 +1,4 @@
-![Logo](~@img/logo-elt-13.png)
+![Logo](logo-elt-22.png)
 
 # GUIAS DE USO EN NPM
 
@@ -60,6 +60,40 @@ npm init -y
 
 git add .
 git commit -m "Inicio de Repositorio"
+```
+
+<!-- Command -->
+
+---
+
+## INSTALACION DE DEPENDENCIAS
+
+<!-- Acciones -->
+
+#### Acciones
+
+- Instalamos Bootstrap en modo de desarrollo con el flag -D
+- Instalamos @Fontawesome free en modo de produccion
+- Instalamos Webpack en modo de desarrollo con --save-dev o -D
+- Instalamos Webpack interface de linea de comandos
+
+<!-- Acciones -->
+
+<!-- Command -->
+
+#### Command
+
+```
+npm install -D bootstrap@latest
+<!-- npm install github:EngineLanTeam/Npm -->
+npm install -D @fortawesome/fontawesome-free
+<!-- npm install --save @fortawesome/fontawesome-free -->
+npm install -D webpack
+npm install -D webpack-cli
+<!-- npm install webpack@latest --save-dev -->
+
+git add .
+git commit -m "Instalacion de Dependencias"
 ```
 
 <!-- Command -->
