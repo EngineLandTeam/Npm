@@ -1,0 +1,12 @@
+{
+  "name": "Npm",
+  "version": "1.0.0",
+  "description": "Configuracion inicial de NPM",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "T3am. <EngineLandTeam@gmail.com>",
+  "license": "MIT"
+}
