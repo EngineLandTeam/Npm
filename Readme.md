@@ -1,4 +1,6 @@
-![Logo](logo-elt-22.png)
+<p align="center">
+	<img src="logo-team-21.png" width="40%"/>
+</p>
 
 # GUIAS DE USO EN NPM
 
@@ -11,6 +13,7 @@
 - Configuraciones Globales de Git
 - Actualizacion de Npm
 - Configuraciones Globales de Npm
+- Vinculamos cuenta de Npm
 
 <!-- Acciones -->
 
@@ -24,6 +27,7 @@ npm set init.author.name "T3am."
 npm set init.author.email "EngineLandTeam@gmail.com"
 npm set init.author.url "https://EngineLand.dev"
 npm set init.license "MIT"
+npm adduser *user* - *pass*
 
 git config --global user.name "T3am."
 git config --global user.email "EngineLandTeam@gmail.com"
@@ -85,12 +89,12 @@ git commit -m "Inicio de Repositorio"
 
 ```
 npm install -D bootstrap@latest
-<!-- npm install github:EngineLanTeam/Npm -->
+*npm install github:EngineLanTeam/Npm*
 npm install -D @fortawesome/fontawesome-free
-<!-- npm install --save @fortawesome/fontawesome-free -->
+*npm install --save @fortawesome/fontawesome-free*
 npm install -D webpack
 npm install -D webpack-cli
-<!-- npm install webpack@latest --save-dev -->
+*npm install webpack@latest --save-dev*
 
 git add .
 git commit -m "Instalacion de Dependencias"
@@ -99,3 +103,42 @@ git commit -m "Instalacion de Dependencias"
 <!-- Command -->
 
 ---
+
+## PUBLICACIOM EN NPM
+
+<!-- Acciones -->
+
+#### Acciones
+
+- Publicacion global de nuestro paquete en local
+- Creamos cuentas en Npmjs y en Github
+- Vinculamos las cuentas de Npmjs y en Github
+- Publicamos nuestro paquete
+- Patch version en npmjs
+- Actualizamos version de npm
+- Remote en github
+
+<!-- Acciones -->
+
+<!-- Command -->
+
+#### Command
+
+```
+npm link
+*npm install -g C:\laragon\www\Npm*
+npm adduser *user* - *pass*
+npm version patch
+npm publish
+npm install -g
+git remote add origin https://github/EngineLandTeam/Npm.git
+
+git add .
+git commit -m "Publicacion en Npm"
+```
+
+<!-- Command -->
+
+---
+
+![Logo](logo-elt-15.png)
