@@ -116,6 +116,7 @@ git commit -m "Instalacion de Dependencias"
 - Publicamos nuestro paquete
 - Patch version en npmjs
 - Actualizamos version de npm
+- Actualizamos version de git
 - Remote en github
 
 <!-- Acciones -->
@@ -129,12 +130,15 @@ npm link
 *npm install -g C:\laragon\www\Npm*
 npm adduser *user* - *pass*
 npm version patch
+git tag -a v1.0.0 -m "Version Inicial"
 npm publish
 npm install -g
 git remote add origin https://github/EngineLandTeam/Npm.git
 
 git add .
 git commit -m "Publicacion en Npm"
+git push origin master
+git push origin --tags
 ```
 
 <!-- Command -->
