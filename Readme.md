@@ -4,33 +4,76 @@
 
 # GUIAS DE USO EN NPM
 
-## VARIABLES GLOBALES
+## GLOBAL
 
 <!-- Acciones -->
 
-#### Acciones
+### Acciones
 
-- Configuraciones Globales de Git
-- Actualizacion de Npm
-- Configuraciones Globales de Npm
-- Vinculamos cuenta de Npm
+**Actualizacion de Npm**
+
+npm install -g _<paquete>@<version>_
+
+**Configuracion Global de Npm**
+
+npm set init.author.name _@Nombre de usuario_
+npm set init.author.email _Email de usuario_
+npm set init.author.url _Url de Usuario_
+npm set init.license _Licencia_
+
+**Cuenta de Npmjs.com**
+
+npm adduser _usuario y password_
+
+**Flags**
+
+**_Alias_**
+
+-i, add, install _Instalacion_
+-g, --global _Instalacion global_
+
+**_Instalacion_**
+
+npm install <dir> _Instalacion desde directorio local o archivo comprimido_
+npm install <url> _Instalacion desde un repositorio remoto_
+npm install <paquete>@<version> _Instala paquete con su propia version (latest por defecto)_
+npm install <@dev><paquete>@<version> _Instala desde el registro del desarrollador del paquete_
+@latest _Ultima actualizacion del paquete_
+
+**_Adicionales_** _(modificadores para package.json)_
+
+-S, --save _opcion por defecto, registrado en dependecies_
+-E, --save-exact _registra la version exacta_
+-E, --save-bundle _registra la version exacta_
+-D, --save-dev _en desarrollo, registrado en devDependecies_
+-P, --save-prod _produccion, registrado en dependecies_
+-O, --save-optional _opcional, registrado en optionalDependecies_
+--no-save _no guarda registro alguno_
+
+**Configuracion Global de Git**
+
+git config --global user.name _@Nombre de usuario_
+git config --global user.email _Email de usuario_
+git config --global core.editor _Editor de git_
+git config --list _Visualizamos la configuracion de git_
 
 <!-- Acciones -->
 
 <!-- Command -->
 
-#### Command
+### Command
 
 ```
 npm install -g npm@latest
-npm set init.author.name "T3am."
+npm set init.author.name "@T3am."
 npm set init.author.email "EngineLandTeam@gmail.com"
 npm set init.author.url "https://EngineLand.dev"
 npm set init.license "MIT"
-npm adduser *user* - *pass*
+npm adduser
 
-git config --global user.name "T3am."
+git config --global user.name "@T3am."
 git config --global user.email "EngineLandTeam@gmail.com"
+git config --global core.editor "C:\\Program Files\\Microsoft VS Code\\Code.exe" --wait
 ```
 
 <!-- Command -->
@@ -41,7 +84,7 @@ git config --global user.email "EngineLandTeam@gmail.com"
 
 <!-- Acciones -->
 
-#### Acciones
+### Acciones
 
 - Creamos una nueva carpeta
 - Inicializamos Git
@@ -49,13 +92,11 @@ git config --global user.email "EngineLandTeam@gmail.com"
 - Configuramos Package.json
 - Creamos y adaptamos .gitignore
 
-- Commit
-
 <!-- Acciones -->
 
 <!-- Command -->
 
-#### Command
+### Command
 
 ```
 mkdir Npm && cd Npm
@@ -74,27 +115,25 @@ git commit -m "Inicio de Repositorio"
 
 <!-- Acciones -->
 
-#### Acciones
+### Acciones
 
-- Instalamos Bootstrap en modo de desarrollo con el flag -D
-- Instalamos @Fontawesome free en modo de produccion
-- Instalamos Webpack en modo de desarrollo con --save-dev o -D
-- Instalamos Webpack interface de linea de comandos
+- Instalamos Bootstrap en modo de desarrollo
+- Instalamos @Fontawesome free en modo de desarrollo
+- Instalamos Webpack en modo de desarrollo
+- Instalamos Webpack CLI en modo desarrollo
 
 <!-- Acciones -->
 
 <!-- Command -->
 
-#### Command
+### Command
 
 ```
-npm install -D bootstrap@latest
-*npm install github:EngineLanTeam/Npm*
-npm install -D @fortawesome/fontawesome-free
-*npm install --save @fortawesome/fontawesome-free*
-npm install -D webpack
-npm install -D webpack-cli
-*npm install webpack@latest --save-dev*
+npm i -D bootstrap@latest
+_npm i github:EngineLanTeam/Npm_
+npm i -D @fortawesome/fontawesome-free
+npm i -D webpack
+npm i -D webpack-cli
 
 git add .
 git commit -m "Instalacion de Dependencias"
@@ -108,12 +147,11 @@ git commit -m "Instalacion de Dependencias"
 
 <!-- Acciones -->
 
-#### Acciones
+### Acciones
 
 - Publicacion global de nuestro paquete en local
-- Creamos cuentas en Npmjs y en Github
-- Vinculamos las cuentas de Npmjs y en Github
-- Publicamos nuestro paquete
+- Vinculamos a cuentas de Npmjs y Github
+- Publicamos nuestro paquete en Npmjs
 - Patch version en npmjs
 - Actualizamos version de npm
 - Actualizamos version de git
@@ -123,12 +161,12 @@ git commit -m "Instalacion de Dependencias"
 
 <!-- Command -->
 
-#### Command
+### Command
 
 ```
 npm link
-*npm install -g C:\laragon\www\Npm*
-npm adduser *user* - *pass*
+_npm install -g C:\laragon\www\Npm_
+npm adduser
 npm version patch
 git tag -a v1.0.0 -m "Version Inicial"
 npm publish
@@ -137,6 +175,37 @@ git remote add origin https://github/EngineLandTeam/Npm.git
 
 git add .
 git commit -m "Publicacion en Npm"
+git push origin master
+git push origin --tags
+```
+
+<!-- Command -->
+
+## README GLOBAL
+
+<!-- Acciones -->
+
+### Acciones
+
+- Incluimos en Readme instrucciones mas usadas
+- Actualizamos version de npm
+- Actualizamos version de git
+- Remote
+
+<!-- Acciones -->
+
+<!-- Command -->
+
+### Command
+
+```
+npm link
+npm version patch
+npm publish
+git tag -a v1.0.2 -m "Readme Global"
+
+git add .
+git commit -m "Readme Global"
 git push origin master
 git push origin --tags
 ```

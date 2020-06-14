@@ -4,23 +4,25 @@
   "description": "First tests with NPM",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --mode production",
+    "build:dev": "webpack --mode development",
+    "build:prod": "webpack --mode production",
     "start": "webpack-dev-server --open --mode development",
     "format": "prettier --write '{*.js,src/**/*.{js,jsx}}'",
     "view": "--open",
     "lint": "eslint src/ --fix"
   },
   "keywords": [
+    "@Team.",
     "npm",
     "node",
-    "webpack"
+    "webpack",
+    "bootstrap",
+    "fontawesome"
   ],
   "author": "T3am. <EngineLandTeam@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "bootstrap": "^4.5.0"
-  },
-  "dependencies": {
+    "bootstrap": "^4.5.0",
     "@fortawesome/fontawesome-free": "^5.13.0"
   },
   "repository": {
