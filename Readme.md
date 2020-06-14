@@ -12,50 +12,50 @@
 
 **Actualizacion de Npm**
 
-npm install -g _<paquete>@<version>_
+- npm install -g _[paquete]@[version]_
 
 **Configuracion Global de Npm**
 
-npm set init.author.name _@Nombre de usuario_
-npm set init.author.email _Email de usuario_
-npm set init.author.url _Url de Usuario_
-npm set init.license _Licencia_
+- npm set init.author.name _@Nombre de usuario_
+- npm set init.author.email _Email de usuario_
+- npm set init.author.url _Url de Usuario_
+- npm set init.license _Licencia_
 
 **Cuenta de Npmjs.com**
 
-npm adduser _usuario y password_
+- npm adduser _usuario y password_
 
 **Flags**
 
 **_Alias_**
 
--i, add, install _Instalacion_
--g, --global _Instalacion global_
+- -i, add, install _Instalacion_
+- -g, --global _Instalacion global_
 
 **_Instalacion_**
 
-npm install <dir> _Instalacion desde directorio local o archivo comprimido_
-npm install <url> _Instalacion desde un repositorio remoto_
-npm install <paquete>@<version> _Instala paquete con su propia version (latest por defecto)_
-npm install <@dev><paquete>@<version> _Instala desde el registro del desarrollador del paquete_
-@latest _Ultima actualizacion del paquete_
+- npm install [dir] _Instalacion desde directorio local o archivo comprimido_
+- npm install [url] _Instalacion desde un repositorio remoto_
+- npm install [paquete]@[version] _Instala paquete con su propia version (latest por defecto)_
+- npm install [@]ev>[paquete]@[version] _Instala desde el registro del desarrollador del paquete_
+- @latest _Ultima actualizacion del paquete_
 
 **_Adicionales_** _(modificadores para package.json)_
 
--S, --save _opcion por defecto, registrado en dependecies_
--E, --save-exact _registra la version exacta_
--E, --save-bundle _registra la version exacta_
--D, --save-dev _en desarrollo, registrado en devDependecies_
--P, --save-prod _produccion, registrado en dependecies_
--O, --save-optional _opcional, registrado en optionalDependecies_
---no-save _no guarda registro alguno_
+- -S, --save _opcion por defecto, registrado en dependecies_
+- -E, --save-exact _registra la version exacta_
+- -E, --save-bundle _registra la version exacta_
+- -D, --save-dev _en desarrollo, registrado en devDependecies_
+- -P, --save-prod _produccion, registrado en dependecies_
+- -O, --save-optional _opcional, registrado en optionalDependecies_
+- --no-save _no guarda registro alguno_
 
 **Configuracion Global de Git**
 
-git config --global user.name _@Nombre de usuario_
-git config --global user.email _Email de usuario_
-git config --global core.editor _Editor de git_
-git config --list _Visualizamos la configuracion de git_
+- git config --global user.name _@Nombre de usuario_
+- git config --global user.email _Email de usuario_
+- git config --global core.editor _Editor de git_
+- git config --list _Visualizamos la configuracion de git_
 
 <!-- Acciones -->
 
@@ -202,7 +202,7 @@ git push origin --tags
 npm link
 npm version patch
 npm publish
-git tag -a v1.0.2 -m "Readme Global"
+_git tag -a v1.0.2 -m "Readme Global"_
 
 git add .
 git commit -m "Readme Global"
